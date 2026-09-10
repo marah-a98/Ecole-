@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation Professionnelle - ISF</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS template -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Contenu spécifique page Formation Professionnelle */
+        body {
+            font-family: 'Work Sans', Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 50px;
+        }
+        .formations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .formation-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .formation-card:hover {
+            transform: translateY(-5px);
+        }
+        .formation-card img {
+            width: 250px;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+        .formation-card h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .formation-card ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .energie { border-top: 5px solid #00b894; }
+        /* Couleurs spécifiques pour chaque formation */
+        .informatique { border-top: 5px solid #7ec8d5; }
+        .langues { border-top: 5px solid #a1b92f; }
+        .comptabilite { border-top: 5px solid #ff7f50; }
+        .assistance { border-top: 5px solid #ffcc66; }
+        .business { border-top: 5px solid #c8b8ff; }
+        .gestion { border-top: 5px solid #ff4d80; }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="site-nav">
+    <div class="container">
+        <div class="menu-bg-wrap">
+            <div class="site-navigation">
+                <a href="index.html" class="logo m-0 float-start d-flex align-items-center">
+                    <img src="images/lg.png" alt="ISF Logo">
+                    <span class="ms-2">ISF</span>
+                </a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                    <li class="active"><a href="index.html">Accueil</a></li>
+                    <li class="has-children">
+                        <a href="#">Formations</a>
+                        <ul class="dropdown">
+                            <li class="has-children">
+                                <a href="#">Formation Académique</a>
+                                <ul class="dropdown">
+                                    <li class="has-children">
+                                        <a href="#">Baccalauréat Français</a>
+                                        <ul class="dropdown">
+                                            <li><a href="properties.html">Voie générale</a></li>
+                                            <li><a href="property-single.html">Le Grand Oral</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="forma.html">Certification Française</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Formation.html">Formation Professionnelle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contactez-nous</a></li>
+                </ul>
+
+                <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<br><br><br><br><br><br><br><br><br><br>
+<!-- CONTENU FORMATIONS -->
+<div class="container">
+    <h1>Formation Professionnelle</h1>
+    <h2>(Avec Bac / Sans Bac)</h2>
+
+    <div class="formations">
+        <!-- Informatique -->
+        <div class="formation-card informatique">
+            <img src="images/infor.jpg" alt="Informatique">
+            <h3>1. Informatique</h3>
+            <ul>
+                <li>Développeur web (HTML, CSS, JavaScript)</li>
+                <li>Développeur mobile (Android, iOS)</li>
+                <li>Développeur logiciel</li>
+                <li>Machine learning / IA</li>
+                <li>Power BI</li>
+                <li>Microsoft Office (Word, Excel, PowerPoint, Access)</li>
+                <li>Python</li>
+            </ul>
+        </div>
+
+        <!-- Langues -->
+        <div class="formation-card langues">
+            <img src="images/lang.jpg" alt="Langues">
+            <h3>2. Langues</h3>
+            <ul>
+                <li>Anglais</li>
+                <li>Espagnol</li>
+                <li>Français</li>
+                <li>Allemand</li>
+                <li>Italien</li>
+            </ul>
+        </div>
+
+        <!-- Comptabilité d'entreprise -->
+        <div class="formation-card comptabilite">
+            <img src="images/comp.jpg" alt="Comptabilité">
+            <h3>3. Comptabilité d'entreprise</h3>
+            <ul>
+                <li>Comptabilité générale</li>
+                <li>Tenue des comptes d'entreprise</li>
+                <li>Gestion financière</li>
+                <li>Gestion de stock</li>
+                <li>Fiscalité</li>
+                <li>Logiciel comptable</li>
+                <li>Déclaration sociale</li>
+            </ul>
+        </div>
+
+        <!-- Assistance de Direction -->
+        <div class="formation-card assistance">
+            <img src="images/assi.jpg" alt="Assistance de direction">
+            <h3>4. Assistance de Direction</h3>
+            <ul>
+                <li>Maîtriser les outils bureautiques</li>
+                <li>Gestion de documents</li>
+                <li>Gestion de temps</li>
+                <li>Planification de communication</li>
+                <li>Gestion financière</li>
+                <li>Comptabilité générale</li>
+            </ul>
+        </div>
+
+        <!-- Business Management -->
+        <div class="formation-card business">
+            <img src="images/buss.jpg" alt="Business Management">
+            <h3>5. Business Management</h3>
+            <ul>
+                <li>Comptabilité générale</li>
+                <li>Ressource humaine</li>
+                <li>Finance</li>
+                <li>Logiciel Sage</li>
+                <li>Déclaration social</li>
+                <li>Technique bancaire</li>
+                <li>Excel professionnel et tableau de bord</li>
+                <li>Entrepreneuriat et Business plan</li>
+            </ul>
+        </div>
+
+        <!-- Gestion de Paie et RH -->
+        <div class="formation-card gestion">
+            <img src="images/ges.png" alt="Gestion de Paie et RH">
+            <h3>6. Gestion de Paie et RH</h3>
+            <ul>
+                <li>Les fondamentaux des RH et rôle de Gestionnaire</li>
+                <li>Technique de recrutement</li>
+                <li>Élaboration des bulletins de paie</li>
+                <li>Calcul des salaires, primes et heures supplémentaires</li>
+                <li>Gestion des contrats de travail et dossiers</li>
+                <li>Droit du travail et obligations de l'employeur</li>
+            </ul>
+        </div>
+        <!-- Gestion de Paie et RH -->
+       <div class="formation-card energie">
+            <img src="images/ptt.png" alt="Énergie pétrolière ">
+            <h3>7. Énergie pétrolière</h3>
+            <ul>
+                <li>Responsable qualité et quantité</li>
+                <li>Responsable stockage et jaugeage</li>
+                <li>Élaboration des bulletins de paie</li>
+                <li>Responsable chargement & déchargement</li>
+                <li>Responsable HSE</li>
+               
+            </ul>
+        </div>
+
+    </div>
+</div>
+<br><br><br>
+   <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Contact</h3>
+              <address>2, Rue d'Angleterre , Tunis,Tunisia</address>
+              <ul class="list-unstyled links">
+                <li><a href="tel://11234567890">+216 25 071 044</a></li>
+                <li><a href="tel://11234567890">+216 98 511 529</a></li>
+                <li>
+                  <a href="mailto:isftunis@gmail.com">isftunis@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Sources</h3>
+              <ul class="list-unstyled float-start links">
+                <!--li><a href="about.html">À propos de nous</a></li-->
+                <li><a href="services.html">Services</a></li>
+                <li><a href="properties.html">Baccalauréat Français</a></li>
+                <li><a href="forma.html">Certification Française</a></li>
+                <!--li><a href="#">Terms</a></li-->
+                <li><a href="Formation.html">Formation Professionnelle</a></li>
+              </ul>
+           
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Links</h3>
+              <ul class="list-unstyled links">
+                <!--li><a href="#">Our Vision</a></li-->
+                <li><a href="about.html">À propos de nous</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="https://www.instagram.com/isftunis/"><span class="icon-instagram"></span></a>
+                </li>
+               
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100085467010435"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/isf-tunis-258501373/"><span class="icon-linkedin"></span></a>
+                </li>
+               
+               
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+              **==========
+            -->
+
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved. &mdash; Designed with love by Mhamdi Marah
+              
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
+
+</body>
+</html>

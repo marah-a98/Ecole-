@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications Françaises - ISF</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS template -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(120deg, #eef2f7, #ffffff);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* HEADER PAGE */
+        .page-header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+        .page-header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #007bff;
+        }
+        .page-header h2 {
+            margin-top: 10px;
+            font-size: 22px;
+            color: #555;
+            font-weight: 400;
+        }
+
+        /* CONTAINER CARDS */
+        .container-cards {
+            max-width: 1100px;
+            margin: 0 auto 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        /* ================================
+   SECTION DIPLÔME NATIONAL DU BREVET
+================================ */
+
+.brevet-section {
+    width: 100%;
+    background-color: #ffedc2;
+    padding: 70px 0 80px;
+}
+
+.brevet-container {
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+/* ================================
+   CONTENU GAUCHE
+================================ */
+
+.brevet-content {
+    padding-right: 10px;
+}
+
+.brevet-content h2 {
+    margin: 0 0 32px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 52px;
+    line-height: 1.15;
+    font-weight: 700;
+    color: #171717;
+}
+
+.brevet-content p {
+    margin: 0;
+
+    max-width: 720px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #292929;
+}
+
+.brevet-date {
+    display: block;
+    margin-top: 35px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+/* ================================
+   IMAGE
+================================ */
+
+.brevet-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.brevet-image img {
+    display: block;
+
+    width: 100%;
+    height: 550px;
+
+    object-fit: cover;
+}
+
+/* ================================
+   TABLETTE
+================================ */
+
+@media (max-width: 992px) {
+
+    .brevet-section {
+        padding: 55px 0;
+    }
+
+    .brevet-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .brevet-content h2 {
+        font-size: 42px;
+    }
+
+    .brevet-content p {
+        font-size: 21px;
+    }
+
+    .brevet-image img {
+        height: 800px;
+    }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 576px) {
+
+    .brevet-section {
+        padding: 40px 0;
+    }
+
+    .brevet-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .brevet-content h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .brevet-content p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .brevet-date {
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+    .brevet-image {
+        width: 100%;
+    }
+
+    .brevet-image img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+    .brevet-section {
+    background: #ffedc2;
+    padding: 70px 0 80px;
+}
+
+.brevet-title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #171717;
+    margin-bottom: 32px;
+}
+
+.brevet-text {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #292929;
+    max-width: 720px;
+    margin-bottom: 35px;
+}
+
+.brevet-date {
+    font-size: 16px;
+    color: #222;
+}
+
+.brevet-img {
+    width: 100%;
+    height: 414px;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .brevet-title {
+        font-size: 42px;
+    }
+
+    .brevet-text {
+        font-size: 21px;
+    }
+
+    .brevet-img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .brevet-section {
+        padding: 40px 0;
+    }
+
+    .brevet-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .brevet-text {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .brevet-img {
+        height: 260px;
+    }
+}
+}
+      
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<!-- NAVIGATION -->
+<nav class="site-nav">
+    <div class="container">
+        <div class="menu-bg-wrap">
+            <div class="site-navigation">
+                <a href="index.html" class="logo m-0 float-start d-flex align-items-center">
+                    <img src="images/lg.png" alt="ISF Logo">
+                    <span class="ms-2">ISF</span>
+                </a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                    <li class="active"><a href="index.html">Accueil</a></li>
+                    <li class="has-children">
+                        <a href="#">Formations</a>
+                        <ul class="dropdown">
+                            <li class="has-children">
+                                <a href="#">Formation Académique</a>
+                                <ul class="dropdown">
+                                    <li class="has-children">
+                                        <a href="#">Baccalauréat Français</a>
+                                        <ul class="dropdown">
+                                            <li><a href="properties.html">Voie générale</a></li>
+                                            <li><a href="property-single.html">Le Grand Oral</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="forma.html">Certification Française</a></li>
+                                    <li class="has-children"></li>
+         <li><a href="brevet.html">brevet</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Formation.html">Formation Professionnelle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contactez-nous</a></li>
+                </ul>
+
+                <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<br><br><br><br>
+<!-- HEADER PAGE -->
+<div class="page-header">
+    <h1>brevet</h1>
+    <h2>Informez-vous et préparez vos examens DNB 2027</h2>
+</div>
+
+
+
+
+
+
+
+<section class="brevet-section">
+    <div class="brevet-container">
+
+        <!-- Partie gauche -->
+        <div class="brevet-content">
+            <h2>🎓 Qu’est-ce que le Brevet ?</h2>
+
+            <p>
+              Le Diplôme national du brevet (DNB) est un examen national qui marque la fin du collège, généralement en classe de 3ᵉ. Il permet d’évaluer les connaissances, les compétences et les acquis des élèves durant leur scolarité au collège. Le Brevet comprend plusieurs épreuves portant notamment sur le français, les mathématiques, l’histoire-géographie, l’EMC et les sciences, ainsi qu’une épreuve orale. Il constitue une étape importante avant l’entrée au lycée et demande une préparation régulière et méthodique.
+            </p>
+
+        </div>
+
+        <!-- Partie droite -->
+        <div class="brevet-image">
+            <img src="images/brev.jpg" alt="Élèves en classe">
+        </div>
+
+    </div>
+</section>
+
+<!--<section class="brevet-section">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="brevet-title">
+                    🎯 À quoi sert le Brevet ?
+                </h2>
+
+                <p class="brevet-text">
+                    Le Brevet marque la fin du collège et constitue une première certification nationale. Cependant, son obtention n’est pas obligatoire pour passer au lycée.
+                </p>
+
+               
+            </div>
+
+            <div class="col-lg-6">
+                <img
+                    src="images/brevet.jpg"
+                    alt="Le diplôme national du brevet"
+                    class="img-fluid brevet-img"
+                >
+            </div>
+
+        </div>
+    </div>
+</section>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+   <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Contact</h3>
+              <address>2, Rue d'Angleterre , Tunis,Tunisia</address>
+              <ul class="list-unstyled links">
+                <li><a href="tel://11234567890">+216 25 071 044</a></li>
+                <li><a href="tel://11234567890">+216 98 511 529</a></li>
+                <li>
+                  <a href="mailto:isftunis@gmail.com">isftunis@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Sources</h3>
+              <ul class="list-unstyled float-start links">
+                <!--li><a href="about.html">À propos de nous</a></li-->
+                <li><a href="services.html">Services</a></li>
+                <li><a href="properties.html">Baccalauréat Français</a></li>
+                <li><a href="forma.html">Certification Française</a></li>
+                <!--li><a href="#">Terms</a></li-->
+                <li><a href="Formation.html">Formation Professionnelle</a></li>
+              </ul>
+           
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Links</h3>
+              <ul class="list-unstyled links">
+                <!--li><a href="#">Our Vision</a></li-->
+                <li><a href="about.html">À propos de nous</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="https://www.instagram.com/isftunis/"><span class="icon-instagram"></span></a>
+                </li>
+               
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100085467010435"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/isf-tunis-258501373/"><span class="icon-linkedin"></span></a>
+                </li>
+               
+               
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+              **==========
+            -->
+
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved. &mdash; Designed with love by Mhamdi Marah
+              
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
+
+</body>
+</html>

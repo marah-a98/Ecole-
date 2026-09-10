@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications Françaises - ISF</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS template -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(120deg, #eef2f7, #ffffff);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* HEADER PAGE */
+        .page-header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+        .page-header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #007bff;
+        }
+        .page-header h2 {
+            margin-top: 10px;
+            font-size: 22px;
+            color: #555;
+            font-weight: 400;
+        }
+
+        /* CONTAINER CARDS */
+        .container-cards {
+            max-width: 1100px;
+            margin: 0 auto 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        /* CARDS */
+        .card {
+            background: linear-gradient(145deg, #ffffff, #f3f6fb);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0));
+            transform: rotate(25deg);
+            transition: all 0.5s ease;
+        }
+        .card:hover::before {
+            left: 50%;
+        }
+        .card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        .card1 img {
+            width: 110%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition: transform 0.5s ease;
+        }
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        /* CARD CONTENT */
+        .card-content {
+            padding: 25px 20px;
+        }
+        .card-content h2 {
+            margin-top: 0;
+            color: #007bff;
+            font-size: 26px;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+        .card:hover .card-content h2 {
+            color: #00aaff;
+        }
+        .card-content h3 {
+            margin: 15px 0 8px;
+            font-size: 20px;
+            color: #555;
+        }
+        .card-content p, .card-content ul {
+            line-height: 1.7;
+            margin-bottom: 12px;
+            color: #444;
+        }
+        .card-content ul {
+            padding-left: 22px;
+        }
+        .note {
+            font-style: italic;
+            color: #666;
+        }
+
+        /* BUTTON STYLE (optionnel pour liens) */
+        .card-content a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background: #007bff;
+            padding: 8px 18px;
+            border-radius: 50px;
+            transition: background 0.3s;
+        }
+        .card-content a:hover {
+            background: #00aaff;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+            .card-content h2 {
+                font-size: 22px;
+            }
+        }
+        @media (max-width: 480px) {
+            .page-header h1 {
+                font-size: 28px;
+            }
+            .card-content h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<!-- NAVIGATION -->
+<nav class="site-nav">
+    <div class="container">
+        <div class="menu-bg-wrap">
+            <div class="site-navigation">
+                <a href="index.html" class="logo m-0 float-start d-flex align-items-center">
+                    <img src="images/lg.png" alt="ISF Logo">
+                    <span class="ms-2">ISF</span>
+                </a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                    <li class="active"><a href="index.html">Accueil</a></li>
+                    <li class="has-children">
+                        <a href="#">Formations</a>
+                        <ul class="dropdown">
+                            <li class="has-children">
+                                <a href="#">Formation Académique</a>
+                                <ul class="dropdown">
+                                    <li class="has-children">
+                                        <a href="#">Baccalauréat Français</a>
+                                        <ul class="dropdown">
+                                            <li><a href="properties.html">Voie générale</a></li>
+                                            <li><a href="property-single.html">Le Grand Oral</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="forma.html">Certification Française</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Formation.html">Formation Professionnelle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contactez-nous</a></li>
+                </ul>
+
+                <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<br><br><br><br>
+<!-- HEADER PAGE -->
+<div class="page-header">
+    <h1>Certifications Françaises</h1>
+    <h2>Informez-vous et préparez vos examens</h2>
+</div>
+
+<!-- CONTENEUR CARDS -->
+<div class="container-cards">
+    <!-- TCF Card -->
+    <div class="card">
+        <img src="images/tcf.jpg" alt="TCF Logo">
+        <div class="card-content">
+            <h2>TCF (Test de Connaissance du Français)</h2>
+            <p><strong>Type :</strong> Test officiel de français général, administré par le CIEP.</p>
+            <p><strong>Objectif :</strong> Évaluer votre niveau de français pour études, travail ou immigration.</p>
+            <p><strong>Niveaux :</strong> A1 à C2 selon le CECRL.</p>
+            <p><strong>Format :</strong></p>
+            <ul>
+                <li>Compréhension orale</li>
+                <li>Compréhension écrite</li>
+                <li>Expression orale</li>
+                <li>Expression écrite</li>
+            </ul>
+            <p><strong>Validité :</strong> 2 ans</p>
+            <p class="note">Souvent demandé pour universités, immigration ou postes professionnels.</p>
+        </div>
+    </div>
+
+    <!-- DELF Card -->
+    <div class="card">
+        <img src="images/delf.jpg" alt="DELF Logo">
+        <div class="card-content">
+            <h2>DELF (Diplôme d’Études en Langue Française)</h2>
+            <p><strong>Type :</strong> Diplôme officiel délivré par le Ministère français de l’Éducation nationale.</p>
+            <p><strong>Objectif :</strong> Certifier un niveau de français stable pour la vie quotidienne ou études.</p>
+            <p><strong>Niveaux :</strong> A1, A2, B1, B2</p>
+            <p><strong>Format :</strong> Compréhension et expression, orale et écrite.</p>
+            <p><strong>Validité :</strong> À vie</p>
+            <p class="note">Idéal pour étudiants et professionnels souhaitant un diplôme officiel reconnu.</p>
+        </div>
+    </div>
+
+    <!-- DALF Card -->
+    <div class="card1">
+        <img src="images/dalf1.webp" alt="DALF Logo">
+        <div class="card-content">
+            <h2>DALF (Diplôme Approfondi de Langue Française)</h2>
+            <p><strong>Type :</strong> Diplôme officiel pour niveau avancé, délivré par le même ministère que le DELF.</p>
+            <p><strong>Objectif :</strong> Certifier une excellente maîtrise du français, surtout pour études universitaires ou environnement professionnel exigeant.</p>
+            <p><strong>Niveaux :</strong> C1, C2</p>
+            <p><strong>Format :</strong> Comme le DELF mais avec textes et situations plus complexes.</p>
+            <p><strong>Validité :</strong> À vie</p>
+            <p class="note">Recommandé pour études supérieures ou travail dans un environnement francophone exigeant.</p>
+        </div>
+    </div>
+</div>
+<br><br><br>
+   <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Contact</h3>
+              <address>2, Rue d'Angleterre , Tunis,Tunisia</address>
+              <ul class="list-unstyled links">
+                <li><a href="tel://11234567890">+216 25 071 044</a></li>
+                <li><a href="tel://11234567890">+216 98 511 529</a></li>
+                <li>
+                  <a href="mailto:isftunis@gmail.com">isftunis@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Sources</h3>
+              <ul class="list-unstyled float-start links">
+                <!--li><a href="about.html">À propos de nous</a></li-->
+                <li><a href="services.html">Services</a></li>
+                <li><a href="properties.html">Baccalauréat Français</a></li>
+                <li><a href="forma.html">Certification Française</a></li>
+                <!--li><a href="#">Terms</a></li-->
+                <li><a href="Formation.html">Formation Professionnelle</a></li>
+              </ul>
+           
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Links</h3>
+              <ul class="list-unstyled links">
+                <!--li><a href="#">Our Vision</a></li-->
+                <li><a href="about.html">À propos de nous</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="https://www.instagram.com/isftunis/"><span class="icon-instagram"></span></a>
+                </li>
+               
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100085467010435"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/isf-tunis-258501373/"><span class="icon-linkedin"></span></a>
+                </li>
+               
+               
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+              **==========
+            -->
+
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved. &mdash; Designed with love by Mhamdi Marah
+              
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
+
+</body>
+</html>
